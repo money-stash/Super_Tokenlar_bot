@@ -51,10 +51,8 @@ async def change_img_save(msg: Message, state: FSMContext, bot: Bot):
     filename = f"post{post}.jpeg"
     path = os.path.join(IMAGES_DIR, filename)
 
-    # Создаем директорию если она не существует
     os.makedirs(IMAGES_DIR, exist_ok=True)
 
-    # В aiogram 3 используется bot.download() для загрузки файлов
     await bot.download(photo, destination=path)
 
     await msg.answer(f"Image for post {post} has been updated ✅")

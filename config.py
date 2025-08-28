@@ -1,5 +1,5 @@
 TOKEN = "8156936879:AAGkopwiAUKqhoQ7WeWhVk88Mk6s5gbMffo"
-ADMIN_ID = 6407310957
+ADMIN_ID = [6407310957, 7958688389, 7742837753]
 
 DB_PATH = "data/database.db"
 PRICE_PATH = "data/prices.json"

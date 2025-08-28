@@ -11,7 +11,7 @@ router = Router()
 
 @router.message(F.text == "/admin")
 async def admin_panel(msg: Message):
-    if msg.from_user.id == ADMIN_ID:
+    if msg.from_user.id in ADMIN_ID:
         kb = [
             [
                 InlineKeyboardButton(
